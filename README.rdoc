@@ -1,28 +1,9 @@
-== README
+== ISPRITO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a One Page site created with Ruby on rails, Bootstrap-sass and fontawesome icons.
 
-Things you may want to cover:
+IspritoLaunching is a Coming soon page to show the customer what the app/website is really into.
 
-* Ruby version
+For more details:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Visit: isprito.com
