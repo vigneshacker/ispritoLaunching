@@ -1,0 +1,263 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+html {
+    font: normal 81.2%/1.65 "Open Sans", sans-serif;
+}
+
+body {
+  font: normal 81.2%/1.65 $font-family; 
+  font-size: 14px; 
+  width:100%;
+  color: $dark-text;
+  font-weight: 400;
+  background: $bg;
+}
+
+::-moz-selection {
+    color: $white;
+    background: lighten($base, 20%);
+    text-shadow: none;
+}
+
+::selection {
+    color: $white;
+    background: lighten($base, 20%);
+    text-shadow: none;
+}
+
+
+/* ==========================================================================
+   Heading Styles
+   ========================================================================== */
+
+h1 {
+  color: $base;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $base;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $base;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: $base;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: $base;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: $base;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* Header Section */
+
+.navbar {
+	min-height: 70px;
+}
+
+.navbar-isprito {
+  background-color: transparent;
+  border-color: transparent;
+
+  .navbar-brand {
+  	color: $white;
+
+  	&:hover, &:focus {
+  		color: lighten($white, 20%);
+  		background-color: transparent;
+  	}
+  }
+
+  .navbar-text {
+  	color: $normal-text;
+  }
+
+  .navbar-nav {
+
+  	li {
+
+  		a {
+  			color: $white;
+
+  			&:hover, &:focus {
+  				color: lighten($white, 20%);
+  				background-color: transparent;
+  			}
+  		}
+  	}
+
+  	.active {
+
+  		a {
+  			color: $dark-text;
+  			background-color: transparent;
+
+  			&:hover, &:focus {
+  				color: $dark-text;
+  				background-color: transparent;
+  			}
+  		}
+  	}
+
+  	.disabled {
+
+  		a {
+  			color: $light-text;
+  			background-color: transparent;
+
+  			&:hover, &:focus {
+  				color: $light-text;
+  				background-color: transparent;
+  			}
+  		}
+  	}
+
+  	.open {
+
+  		a {
+
+  			background-color: $border;
+  			color: $normal-text;
+
+  			&:hover, &:focus {
+  				background-color: $border;
+  				color: $normal-text;
+  			}
+  		}
+
+  		@media (max-width: 767px) {
+	  		.dropdown-menu {
+
+	  			li {
+
+	  				a {
+	  					color: $normal-text;
+
+	  					&:hover, &:focus {
+	  						color: $dark-text;
+	  						background-color: transparent;
+	  					}
+	  				}
+	  			}
+
+	  			.active {
+
+	  				a {
+	  					color: $normal-text;
+	  					background-color: $border;
+
+	  					&:hover, &:focus {
+	  						color: $normal-text;
+	  						background-color: $border;
+	  					}
+	  				}
+	  			}
+
+	  			.disabled {
+
+	  				a {
+	  					color: $light-text;
+	  					background-color: transparent;
+
+	  					&:hover, &:focus {
+	  						color: $light-text;
+	  						background-color: transparent;
+	  					}
+	  				}
+	  			}
+	  		}
+	  	}
+  	}
+  }
+
+  .navbar-toggle {
+  	border-color: $border;
+
+  	&:hover, &:focus {
+  		background-color: $border;
+  	}
+
+  	.icon-bar {
+  		background-color: darken($border, 20%);
+  	}
+  }
+
+  .navbar-collapse, .navbar-form {
+  	border-color: $border;
+  }
+
+  .navbar-link {
+  	color: $normal-text;
+
+  	&:hover {
+  		color: $dark-text;
+  	}
+  }
+
+  .btn-link {
+  	color: $base;
+
+  	&:hover, &:focus {
+  		color: lighten($base, 20%);
+  	}
+
+  	&[disabled]:hover, &[disabled]:focus, {
+			color: $light-text;
+  	}
+  }
+
+  fieldset[disabled] .btn-link {
+		
+		&:hover, &:focus {
+			color: $light-text;
+		}
+  }
+}
+
+.navbar-brand {
+	padding: 25px 15px;
+	height: 70px;
+}
+
+.nav {
+
+	li {
+
+		a {
+			padding: 25px 15px; 
+		}
+	}
+}
+
+.social-header {
+	font-size: 18px;
+
+}
+
+/* Header section completed. */
