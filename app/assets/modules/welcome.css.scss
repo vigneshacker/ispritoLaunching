@@ -21,6 +21,10 @@
 	padding-left: 50px;
 	color: $white;
 	text-align: center;
+
+	@media (max-width: 768px) {
+		text-align: left;
+	}
 }
 
 .title {
@@ -33,7 +37,10 @@
 	font-family: $font-family-alt;
 	line-height: 80px;
 	color: $white;
-	text-align: center;
+
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
 }
 
 .desc {
@@ -47,6 +54,10 @@
 	font-style: italic;
 	line-height: 36px;
 	color: #ddd;
+
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
 }
 
 .btn-invite {
@@ -71,4 +82,39 @@
 
 .invite {
 	margin-top: 50px;
+}
+
+.scroll-down {
+	position:	absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+
+	&:hover, &:focus {
+		padding-bottom: 40px;
+
+		a {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+
+	a {
+		color: rgba(255, 255, 255, 0.7);
+		text-decoration: none;
+		-webkit-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		transition: all 500ms ease;		
+	}
 }

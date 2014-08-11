@@ -78,7 +78,7 @@ h6 {
 /* Header Section */
 
 .navbar {
-	min-height: 70px;
+	min-height: 100px;
 }
 
 .navbar-isprito {
@@ -241,7 +241,7 @@ h6 {
 }
 
 .navbar-brand {
-	padding: 25px 15px;
+	padding: 40px 15px;
 	height: 70px;
 }
 
@@ -250,14 +250,20 @@ h6 {
 	li {
 
 		a {
-			padding: 25px 15px; 
+			padding: 40px 15px; 
 		}
 	}
 }
 
 .social-header {
-	font-size: 18px;
+	font-size: 25px;
+}
 
+@media (max-width: 768px) {
+  
+  .navbar-right {
+   display: none;
+  }
 }
 
 /* Header section completed. */
