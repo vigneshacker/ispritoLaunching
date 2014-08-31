@@ -21,17 +21,21 @@ img {
   display: inline-block;
 }
 
-// ::-moz-selection {
-//     color: $white;
-//     background: lighten($base, 20%);
-//     text-shadow: none;
-// }
+:focus {
+  outline: none;
+}
 
-// ::selection {
-//     color: $white;
-//     background: lighten($base, 20%);
-//     text-shadow: none;
-// }
+::-moz-selection {
+    color: $white;
+    background: lighten($base, 20%);
+    text-shadow: none;
+}
+
+::selection {
+    color: $white;
+    background: lighten($base, 20%);
+    text-shadow: none;
+}
 
 
 /* ==========================================================================

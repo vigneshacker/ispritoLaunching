@@ -12,6 +12,10 @@ gem 'bootstrap-sass'
 
 gem 'font-awesome-sass'
 
+gem 'active_type'
+
+gem "mailchimp-api"
+
 gem 'haml-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

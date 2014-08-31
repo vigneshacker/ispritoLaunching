@@ -1,11 +1,11 @@
 %section#invitation.pre-footer
   %h2 Get notified when we launch.
-  %p We understand that you can't wait to get your hands on our platform. Unfortunately we’re not quite ready yet. You can help us by becoming a tester. Leave your email and we’ll send you an invitation when we go in private beta.
+  %p We understand that you can't wait to get your hands on our platform. Unfortunately we’re not quite ready yet. Leave your email and we’ll send you an invitation when we go in private beta.
   .w-form.clearfix.form
-    %form.clearfix.form{:action => "#", "data-name" => "Email Form", :name => "email-form"}
-      %input.w-input.field{"data-name" => "Email", :name => "email", :placeholder => "Enter your email address", :required => "required", :type => "email"}/
-      %input.w-button.button.form-button{"data-wait" => "Please wait...", :type => "submit", :value => "Sign up"}/
-    .w-form-done.success
-      %p.success-message Thank you!
-    .w-form-fail.error
-      %p.error-message Something went wrong
+    = form_tag('/home/subscribe', method: :post, "id" => "invite", remote: "true", class: "clearfix form") do
+      = email_field_tag :email, nil, required: true, placeholder: "Enter your email address", class: "w-input field styled validate temail"
+      = submit_tag "Sign up", :id => "msubmit", class: "w-button button form-button"
+      .w-form-done.success
+        %p.success-message Thank you!
+      .w-form-fail.error
+        %p.error-message Something went wrong
