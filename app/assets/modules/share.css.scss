@@ -2,6 +2,16 @@
   padding: 100px 0 0;
   background-color: #eee;
   text-align: center;
+
+  @media (max-width: 991px) {
+    padding-right: 0;
+    padding-left: 0; 
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 0 0;
+    text-align: left;
+  }
 }
 
 .picturebox {
@@ -38,6 +48,25 @@
     -o-transform: translate(-300px, 140px) rotate(-3deg);
     transform: translate(-300px, 140px) rotate(-3deg);
   }
+
+  @media (max-width: 991px) {
+    -webkit-transform: translate(-300px, 150px) rotate(-3deg);
+    -ms-transform: translate(-300px, 150px) rotate(-3deg);
+    -o-transform: translate(-300px, 150px) rotate(-3deg);
+    transform: translate(-300px, 150px) rotate(-3deg);
+
+    &:hover {
+      -webkit-transform: translate(-300px, 150px) rotate(-3deg);
+      -ms-transform: translate(-300px, 150px) rotate(-3deg);
+      -o-transform: translate(-300px, 150px) rotate(-3deg);
+      transform: translate(-300px, 150px) rotate(-3deg);
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 400px;
+    margin-left: -200px;
+  }
 }
 
 .picturee-2 {
@@ -60,6 +89,18 @@
     -ms-transform: translate(300px, 160px) rotate(8deg);
     -o-transform: translate(300px, 160px) rotate(8deg);
     transform: translate(300px, 160px) rotate(8deg);
+  }
+
+  @media (max-width: 991px) {
+    -webkit-transform: translate(300px, 160px) rotate(8deg);
+    -ms-transform: translate(300px, 160px) rotate(8deg);
+    -o-transform: translate(300px, 160px) rotate(8deg);
+    transform: translate(300px, 160px) rotate(8deg);
+  }
+
+  @media (max-width: 767px) {
+    width: 400px;
+    margin-left: -200px;
   }
 }
 
@@ -84,5 +125,21 @@
     -ms-transform: translate(0px, 0px) rotate(0deg);
     -o-transform: translate(0px, 0px) rotate(0deg);
     transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  @media (max-width: 991px) {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    -webkit-transition: none 0ms ease;
+    -o-transition: none 0ms ease;
+    transition: none 0ms ease; 
+  }
+
+  @media (max-width: 767px) {
+    width: 400px;
+    margin-top: 100px;
+    margin-left: -200px;
   }
 }

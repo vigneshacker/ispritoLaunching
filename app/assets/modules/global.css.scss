@@ -284,6 +284,11 @@ h6 {
   background-color: #333;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
+
+  @media (max-width: 767px) {
+    padding: 50px 20px;
+    text-align: left;
+  }
 }
 
 .love {

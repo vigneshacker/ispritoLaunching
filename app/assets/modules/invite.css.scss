@@ -3,6 +3,16 @@
   padding: 100px 80px;
   background-color: #f4f4f4;
   text-align: center;
+
+  @media (max-width: 991px) {
+    padding-right: 60px;
+    padding-left: 60px; 
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 20px;
+    text-align: left;
+  }
 }
 
 .w-form {
@@ -16,6 +26,11 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    text-align: left;
+  }
 }
 
 .w-input {
@@ -52,6 +67,10 @@
   &:focus {
     border-bottom-color: $base;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .w-button {
@@ -79,16 +98,31 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: rgba(98, 147, 205, 0.8);
+  }
+
   &.form-button {
     margin-top: 0;
     // margin-left: 50px;
     float: right;
+
+    @media (max-width: 767px) {
+      display: block;
+      margin-left: 0px;
+    }
   }
 }
 
 .success {
   height: 44px;
   border-radius: 50px;
+
+  @media (max-width: 767px) {
+    padding-right: 35px;
+    padding-left: 35px;
+    float: left;
+  }
 }
 
 .w-form-done {
@@ -120,6 +154,10 @@
   color: $white;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    float: left;
+  }
 }
 
 .error-message {
@@ -175,4 +213,116 @@
 .db {
   display: block;
   -webkit-animation: move 6s;
+}
+
+
+// Responsive 479px
+
+@media (max-width: 479px) {
+  p {
+    line-height: 36px;
+  }
+  .button.form-button {
+    float: left;
+  }
+  .search {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .image {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 25px;
+    padding-right: 0px;
+    background-color: white;
+  }
+  .create {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .white {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .create {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  .pointer.left {
+    display: none;
+  }
+  .pointer.right {
+    display: none;
+  }
+  .option {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .option._50.left {
+    display: inline-block;
+    margin-left: -140px;
+  }
+  .option._50.right {
+    display: inline-block;
+    margin-top: 75px;
+    margin-left: -10px;
+  }
+  .error {
+    float: left;
+  }
+  .picturebox {
+    height: 200px;
+    margin-top: 0;
+  }
+  .picturee {
+    width: 300px;
+    margin-top: 0px;
+    margin-left: -150px;
+    -webkit-transform: translate(0px, 50px);
+    -ms-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .picturee:hover {
+    -webkit-transform: translate(0px, 50px);
+    -ms-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+  }
+  .picturee-2 {
+    position: absolute;
+    width: 300px;
+    margin-left: -150px;
+    -webkit-transform: translate(150px, 80px) rotate(8deg);
+    -ms-transform: translate(150px, 80px) rotate(8deg);
+    -o-transform: translate(150px, 80px) rotate(8deg);
+    transform: translate(150px, 80px) rotate(8deg);
+  }
+  .picturee-2:hover {
+    -webkit-transform: translate(150px, 80px) rotate(8deg);
+    -ms-transform: translate(150px, 80px) rotate(8deg);
+    -o-transform: translate(150px, 80px) rotate(8deg);
+    transform: translate(150px, 80px) rotate(8deg);
+  }
+  .picturee-3 {
+    width: 300px;
+    margin-left: -150px;
+    -webkit-transform: translate(-150px, 70px) rotate(-3deg);
+    -ms-transform: translate(-150px, 70px) rotate(-3deg);
+    -o-transform: translate(-150px, 70px) rotate(-3deg);
+    transform: translate(-150px, 70px) rotate(-3deg);
+  }
+  .picturee-3:hover {
+    -webkit-transform: translate(-150px, 70px) rotate(-3deg);
+    -ms-transform: translate(-150px, 70px) rotate(-3deg);
+    -o-transform: translate(-150px, 70px) rotate(-3deg);
+    transform: translate(-150px, 70px) rotate(-3deg);
+  }
 }

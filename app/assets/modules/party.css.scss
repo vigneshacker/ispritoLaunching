@@ -5,6 +5,15 @@
   background-color: #333;
   color: $white;
   text-align: center; 
+
+  @media (max-width: 991px) {
+    padding: 100px 60px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 20px;
+    text-align: left;
+  }
 }
 
 .white {
@@ -22,6 +31,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   max-width: 100%;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .option {
@@ -29,6 +42,11 @@
   margin-top: 50px;
   margin-right: 20px;
   margin-left: 20px;
+
+  @media (max-width: 767px) {
+    position: relative;
+    z-index: 100;
+  }
 
   &._50 {
     width: 150px;
@@ -50,6 +68,15 @@
       margin-top: 75px;
       margin-right: 0;
       margin-left: -300px;
+
+      @media (max-width: 767px) {
+        z-index: 0;
+        margin-left: -230px;
+
+        &:hover {
+          opacity: 0.5
+        }
+      }
     }
 
     &.right {
@@ -59,10 +86,26 @@
       display: inline-block;
       margin-top: 75px;
       margin-left: 150px;
+
+       @media (max-width: 767px) {
+          z-index: 0;
+          margin-left: 80px;
+
+          &:hover {
+            z-index: 0;
+            opacity: 0.5
+          }
+        }
     }
   }
 }
 
 .avatars {
   margin-top: 10px;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
