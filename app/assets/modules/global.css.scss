@@ -15,17 +15,23 @@ body {
   background: $bg;
 }
 
-::-moz-selection {
-    color: $white;
-    background: lighten($base, 20%);
-    text-shadow: none;
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-::selection {
-    color: $white;
-    background: lighten($base, 20%);
-    text-shadow: none;
-}
+// ::-moz-selection {
+//     color: $white;
+//     background: lighten($base, 20%);
+//     text-shadow: none;
+// }
+
+// ::selection {
+//     color: $white;
+//     background: lighten($base, 20%);
+//     text-shadow: none;
+// }
 
 
 /* ==========================================================================
@@ -267,3 +273,37 @@ h6 {
 }
 
 /* Header section completed. */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.love {
+  margin-top: 20px;
+  font-family: $font-family;
+}
+
+.heart {
+  color: $red;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-top: 10px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: $font-family;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    color: $white;
+  }
+}

@@ -1,0 +1,68 @@
+.create {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 120px 80px;
+  background-color: #333;
+  color: $white;
+  text-align: center; 
+}
+
+.white {
+  color: $white;
+}
+
+.over-picture {
+  color: rgba(255, 255, 255, 0.49);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.overview {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.option {
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  &._50 {
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.left {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      display: inline-block;
+      margin-top: 75px;
+      margin-right: 0;
+      margin-left: -300px;
+    }
+
+    &.right {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      display: inline-block;
+      margin-top: 75px;
+      margin-left: 150px;
+    }
+  }
+}
+
+.avatars {
+  margin-top: 10px;
+}

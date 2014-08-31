@@ -1,0 +1,88 @@
+.share {
+  padding: 100px 0 0;
+  background-color: #eee;
+  text-align: center;
+}
+
+.picturebox {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.picturee-3 {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  display: inline-block;
+  margin-left: -300px;
+  border: 10px solid $white;
+  -webkit-transform: translate(-300px, 180px) rotate(-3deg);
+  -ms-transform: translate(-300px, 180px) rotate(-3deg);
+  -o-transform: translate(-300px, 180px) rotate(-3deg);
+  transform: translate(-300px, 180px) rotate(-3deg);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+
+  &:hover {
+    -webkit-transform: translate(-300px, 140px) rotate(-3deg);
+    -ms-transform: translate(-300px, 140px) rotate(-3deg);
+    -o-transform: translate(-300px, 140px) rotate(-3deg);
+    transform: translate(-300px, 140px) rotate(-3deg);
+  }
+}
+
+.picturee-2 {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  display: inline-block;
+  margin-left: -300px;
+  border: 10px solid $white;
+  -webkit-transform: translate(300px, 200px) rotate(8deg);
+  -ms-transform: translate(300px, 200px) rotate(8deg);
+  -o-transform: translate(300px, 200px) rotate(8deg);
+  transform: translate(300px, 200px) rotate(8deg);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+
+  &:hover {
+    -webkit-transform: translate(300px, 160px) rotate(8deg);
+    -ms-transform: translate(300px, 160px) rotate(8deg);
+    -o-transform: translate(300px, 160px) rotate(8deg);
+    transform: translate(300px, 160px) rotate(8deg);
+  }
+}
+
+.picturee {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  z-index: 0;
+  display: inline-block;
+  margin-left: -300px;
+  border: 10px solid $white;
+  -webkit-transform: translate(0px, 80px) rotate(-8deg);
+  -ms-transform: translate(0px, 80px) rotate(-8deg);
+  -o-transform: translate(0px, 80px) rotate(-8deg);
+  transform: translate(0px, 80px) rotate(-8deg);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+
+  &:hover {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    -ms-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}

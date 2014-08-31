@@ -53,7 +53,7 @@ p {
 	position: absolute;
 	left: 50%;
 	right: 50%;
-	margin-top: 90px;
+	margin-top: 40px;
 	margin-left: -100px;
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -71,16 +71,16 @@ p {
 	position: absolute;
 	left: 50%;
 	right: 50%;
-	margin-top: 320px;
+	margin-top: 270px;
 	margin-left: -16px;
 
 	&.right {
-		margin-top: 140px;
-		margin-left: -180px;
+		margin-top: 220px;
+		margin-left: -210px;
 	}
 
 	&.left {
 		margin-top: 180px;
-		margin-left: 150px;
+		margin-left: 215px;
 	}
 }

@@ -1,0 +1,119 @@
+.pre-footer {
+  position: relative;
+  padding: 100px 80px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.w-form {
+  margin: 0 0 15px;
+}
+
+.form {
+  display: block;
+  max-width: 600px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.w-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.field {
+  display: inline-block;
+  height: 44px;
+  max-width: 380px;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  float: left;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  border-left-style: none;
+  border-radius: 0;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &:focus {
+    border-bottom-color: $base;
+  }
+}
+
+.w-button {
+  display: inline-block;
+  padding: 12px;
+  background-color: black;
+  color: $white;
+  border: 0;
+  line-height: inherit;
+}
+
+.button {
+  display: inline-block;
+  height: 44px;
+  margin-top: 25px;
+  padding: 11px 35px;
+  border-radius: 50px;
+  background-color: $base;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: $font-family;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.form-button {
+    margin-top: 0;
+    margin-left: 50px;
+    float: right;
+  }
+}
+
+.success {
+  height: 44px;
+  border-radius: 50px;
+}
+
+.w-form-done {
+  display: none;
+  padding: 10px;
+  background-color: #dddddd;
+}
+
+.error {
+  height: 44px;
+  margin-top: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
+  border-radius: 50px;
+  background-color: $base, 0.49;
+  font-family: $font-family;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.w-form-fail {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: lighten($base, 30%);
+}
