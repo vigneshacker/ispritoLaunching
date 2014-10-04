@@ -102,6 +102,11 @@ h6 {
   		color: lighten($white, 20%);
   		background-color: transparent;
   	}
+
+    .logo {
+      width: 145px;
+      height: auto;
+    }
   }
 
   .navbar-text {
@@ -251,7 +256,7 @@ h6 {
 }
 
 .navbar-brand {
-	padding: 40px 15px;
+	padding: 28px 15px;
 	height: 70px;
 }
 
