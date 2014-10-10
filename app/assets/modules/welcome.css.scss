@@ -29,7 +29,7 @@
 }
 
 .logo {
-  width: 145px;
+  width: 300px;
   height: auto;
 }
 
@@ -40,7 +40,7 @@
 	margin-left: auto;
 	margin-bottom: 0;
 	font-size: 50px;
-	font-family: $font-family-alt;
+	font-family: "Kalam", Arial, Helvetica;
 	line-height: 80px;
 	color: $white;
 
@@ -54,12 +54,14 @@
 	max-width: 920px;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: "Droid Serif";
-	font-size: 22px;
-	font-weight: 400;
-	font-style: italic;
+	font-family: $font-family;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 3px rgba(0,0,0,.8),0 0 30px rgba(0,0,0,.075);
 	line-height: 36px;
-	color: #ddd;
+	color: #fff;
 
 	@media (max-width: 768px) {
 		font-size: 18px;
@@ -71,6 +73,7 @@
 	color: $white;
 	background: $base;
 	border-radius: 50px;
+	font-size: 16px;
 	text-transform: uppercase;
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -78,6 +81,7 @@
 	-webkit-transition: all 500ms ease;
 	text-align: center;
 	text-decoration: none;
+	letter-spacing: 2px;
 
 
 	&:hover, &:focus {

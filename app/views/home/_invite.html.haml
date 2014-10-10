@@ -1,5 +1,7 @@
 %section#invitation.pre-footer
-  %h2 WAIT FOR IT, IT'S GOING TO BE LEGENDARY
+  %h2.invite-text
+    Wait for it, It's going to be...
+    %span LEGENDARY
   %p We understand that you can't wait to get started on our platform, so let's get socializing for the time being. You leave your email id with us and we'll send you a personalized invitation once we're ready to break the rules, party all night long and live not just for the sake of living but for the fun of it! 
   .w-form.clearfix.form
     = form_tag('/home/subscribe', method: :post, "id" => "invite", remote: "true", class: "clearfix form") do
