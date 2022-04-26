@@ -42,7 +42,7 @@ GEM
     coffee-script-source (1.7.1)
     erubis (2.7.0)
     excon (0.39.5)
-    execjs (2.2.1)
+    execjs (2.8.1)
     font-awesome-sass (4.1.0)
       sass (~> 3.2)
     haml (4.0.5)
@@ -60,7 +60,7 @@ GEM
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.1)
+    json (1.8.6)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -122,9 +122,8 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.5.3)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
