@@ -89,7 +89,7 @@ GEM
     excon (0.92.3)
     execjs (2.8.1)
     ffi (1.15.5)
-    font-awesome-sass (6.1.2)
+    font-awesome-sass (6.2.0)
       sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
