@@ -187,7 +187,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.5.0)
+    sdoc (2.6.0)
       rdoc (>= 5.0)
     spring (4.1.1)
     sprockets (3.7.2)
@@ -231,7 +231,7 @@ DEPENDENCIES
   mailchimp-api
   rails (= 7.0.4)
   sass-rails (~> 6.0.0)
-  sdoc (~> 2.5.0)
+  sdoc (~> 2.6.0)
   spring
   sqlite3
   turbolinks
