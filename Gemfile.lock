@@ -140,7 +140,7 @@ GEM
     nokogiri (1.14.0)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    psych (5.0.1)
+    psych (5.1.0)
       stringio
     racc (1.6.2)
     rack (2.2.6.2)
@@ -185,7 +185,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.6.0)
+    sdoc (2.6.1)
       rdoc (>= 5.0)
     spring (4.1.1)
     sprockets (3.7.2)
@@ -197,7 +197,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.6.0)
       mini_portile2 (~> 2.8.0)
-    stringio (3.0.4)
+    stringio (3.0.5)
     temple (0.8.2)
     thor (1.2.1)
     tilt (2.0.11)
@@ -228,7 +228,7 @@ DEPENDENCIES
   mailchimp-api
   rails (= 7.0.4.2)
   sass-rails (~> 6.0.0)
-  sdoc (~> 2.6.0)
+  sdoc (~> 2.6.1)
   spring
   sqlite3
   turbolinks
